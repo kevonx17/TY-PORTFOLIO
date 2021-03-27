@@ -4,7 +4,12 @@
 
 export const environment = {
   production: false,
-  name: "prod"
+  name: 'default',
+  firebase: {
+    config: {
+     
+    },
+  },
 };
 
 /*
