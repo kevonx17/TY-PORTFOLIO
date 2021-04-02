@@ -38,6 +38,11 @@
             </app-date-range>
         </app-form-field>
 
+        <app-form-field label="Autocomplete" [required]="true" [control]="form.controls.autocomplete"
+            [isInline]="isInline">
+            <app-autocomplete formControlName="autocomplete" [items]="items"></app-autocomplete>
+        </app-form-field>
+
 </form>
 <code>
     {{ form.value | json }}

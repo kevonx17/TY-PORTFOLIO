@@ -70,6 +70,11 @@ dateRange: [null, {
   updateOn: 'change', validators: [
       Validators.required
   ]
+}],
+autocomplete: [null, {
+  updateOn: 'change', validators: [
+      Validators.required
+  ]
 }]
     });
   }
