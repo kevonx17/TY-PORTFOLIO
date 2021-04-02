@@ -7,8 +7,8 @@ import { PasswordModule } from './password/password.module';
 import { SelectModule } from './select/select.module';
 import { CheckboxesModule } from './checkboxes/checkboxes.module';
 import { RadiosModule } from './radios/radios.module';
-/*import { DateModule } from './date/date.module';
-import { DateRangeModule } from './date-range/date-range.module';
+import { DateModule } from './date/date.module';
+/*import { DateRangeModule } from './date-range/date-range.module';
 import { AutocompleteModule } from './autocomplete/autocomplete.module';*/
 
 
@@ -24,8 +24,8 @@ import { AutocompleteModule } from './autocomplete/autocomplete.module';*/
     SelectModule,
     CheckboxesModule,
     RadiosModule,
-    /*DateModule,
-    DateRangeModule,
+    DateModule,
+    /*DateRangeModule,
     AutocompleteModule*/
   ],
   exports: [
@@ -35,8 +35,8 @@ import { AutocompleteModule } from './autocomplete/autocomplete.module';*/
     SelectModule,
     CheckboxesModule,
     RadiosModule,
-    /*DateModule,
-    DateRangeModule,
+    DateModule,
+    /*DateRangeModule,
     AutocompleteModule*/
   ]
 })
