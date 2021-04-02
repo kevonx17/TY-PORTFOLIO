@@ -18,6 +18,8 @@ export class SharedComponent implements OnInit {
 
   items: ControlItem[];
 
+  showSpinner = false;
+
   constructor(private fb: FormBuilder) {
     this.isInline = true;
 
@@ -106,7 +108,24 @@ autocomplete: [null, {
   onToggleInline(): void { this.isInline = !this.isInline;  }
 
   onToggleDisable(): void {
-    if (this.form.enabled) {this.form.disable();} 
-    else {this.form.enable();}
+    if (this.form.enabled) {
+        this.form.disable();
+    } else {
+        this.form.enable();
+    }
 }
+
+onToggleSpinner(): void {
+  this.showSpinner = !this.showSpinner;
+}
+
+onSuccess(): void {
+  //this.notification.success('Everything is fine!');
+}
+
+onError(): void {
+  //this.notification.error('Oops! Something is wrong');
+}
+
+
 }
