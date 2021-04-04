@@ -12,9 +12,18 @@ const routes: Routes = [
       {
         path: 'demo',
         loadChildren: () => import('./pages/demo/demo.module').then(m => m.DemoModule)
-    }
-    ]
+    },
+    {
+      path: 'static',
+      loadChildren: () => import('./pages/static/static.module').then(m => m.StaticModule)
   }
+    ]
+  },
+  {
+    path: '**',
+    pathMatch: 'full',
+    redirectTo: '/static/404'
+}
 ];
 
 @NgModule({
