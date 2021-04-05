@@ -3,9 +3,10 @@ import { CommonModule } from '@angular/common';
 
 import { SharedRoutingModule } from './shared-routing.module';
 import { SharedComponent } from './shared.component';
-import { ButtonsModule } from '@app/shared/buttons'; // , ControlsModule, IndicatorsModule, PopupsModule
-import { ControlsModule } from '@app/shared/controls'; // , ControlsModule, IndicatorsModule, PopupsModule
+import { ButtonsModule } from '@app/shared/buttons'; 
+import { ControlsModule } from '@app/shared/controls'; 
 import { IndicatorsModule } from '@app/shared/indicators';
+import { PopupsModule } from '@app/shared/popups';
 import { ReactiveFormsModule } from '@angular/forms';
 
 
@@ -18,7 +19,8 @@ import { ReactiveFormsModule } from '@angular/forms';
     ButtonsModule,
     ControlsModule,
     ReactiveFormsModule,
-    IndicatorsModule
+    IndicatorsModule,
+    PopupsModule
   ]
 })
 export class SharedModule { }
